@@ -1,0 +1,49 @@
+Nella lezione 2, vediamo come si rappresentano i dati normalmente in JavaScript.
+
+In questa lezione c'è un nuovo file che andremo ad utilizzare: "main.js".
+
+Per utilizzarlo, copiarlo nella directory /js precedentemente creata, e aggiungere nel file "index.html" la riga:
+
+"<script src="js/main.js"></script>"
+
+In questa lezione non andremo a disctere di backbone, ma di come rappresentare i dati in JS.
+
+
+var Persona = function(data){
+    this.nome = data.nome;
+    this.eta = data.eta;
+    this.occupazione = data.occupazione;
+};
+Persona.prototype.lavoro = function(){
+    return this.nome + ' sta lavorando, la sua occupazione: ' + this.occupazione;
+};
+
+
+Definiamo un oggetto Persona con 3 attributi:
+1) nome, 
+2) eta', 
+3) occupazione
+
+Creiamo una nuova persona:
+
+var persona = new Persona({nome: "Mattia", eta: 26, occupazione: "Software Developer"})
+
+
+In chrome, e nella console possiamo provare a digitare:
+
+> persona
+Persona {nome: "Mattia", eta: 26, occupazione: "Software Developer", lavoro: function}
+
+> persona.eta
+26
+
+> persona.get('eta')
+TypeError: Object [object Object] has no method 'get' //come vedremo ci sarà possibile con l'utilizzo di backbone
+
+> persona.occupazione
+"Software Developer"
+
+>persona.lavoro()
+"Mattia sta lavorando, la sua occupazione: Software Developer"
+
+
