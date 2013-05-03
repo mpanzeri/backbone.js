@@ -1,6 +1,6 @@
-Cosa è BackBone.js
+Cosa ï¿½ BackBone.js
 ------------------
-BackBone.js è un framework che ti permette di strutturare il tuo codice JavaScript secondo il pattern MVC.
+BackBone.js ï¿½ un framework che ti permette di strutturare il tuo codice JavaScript secondo il pattern MVC.
 
 Dipendenze richieste
 --------------------
@@ -25,7 +25,7 @@ Come vedrai dal file index.html, bisogna importare i 3 file js dei 3 framework s
         </body>
 </html>
 
-Verificare se l'installazione è risucita
+Verificare se l'installazione ï¿½ risucita
 ----------------------------------------
 
-Andare su Chrome e sulla console java, digirare "Backbone" e se hai fatto tutto correttamente potrai avere accesso alle variabili globali di BackBone
+Andare su Chrome e sulla console javascript, digirare "Backbone" e se hai fatto tutto correttamente potrai avere accesso alle variabili globali di BackBone
