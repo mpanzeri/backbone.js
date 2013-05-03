@@ -1,6 +1,6 @@
 Nella lezione 2, vediamo come si rappresentano i dati normalmente in JavaScript.
 
-In questa lezione c'� un nuovo file che andremo ad utilizzare: "main.js".
+In questa lezione c'e' un nuovo file che andremo ad utilizzare: "main.js".
 
 Per utilizzarlo, copiarlo nella directory /js precedentemente creata, e aggiungere nel file "index.html" la riga:
 
@@ -38,7 +38,7 @@ Persona {nome: "Mattia", eta: 26, occupazione: "Software Developer", lavoro: fun
 26
 
 > persona.get('eta')
-TypeError: Object [object Object] has no method 'get' //come vedremo ci sar� possibile con l'utilizzo di backbone
+TypeError: Object [object Object] has no method 'get' //come vedremo ci sara' possibile con l'utilizzo di backbone
 
 > persona.occupazione
 "Software Developer"
