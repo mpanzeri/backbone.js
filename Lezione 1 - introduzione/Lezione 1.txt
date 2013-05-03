@@ -26,6 +26,6 @@ Come vedrai dal file index.html, bisogna importare i 3 file js dei 3 framework s
 </html>
 
 Verificare se l'installazione e' risucita
-----------------------------------------
+-----------------------------------------
 
 Andare su Chrome e sulla console javascript, digirare "Backbone" e se hai fatto tutto correttamente potrai avere accesso alle variabili globali di BackBone
