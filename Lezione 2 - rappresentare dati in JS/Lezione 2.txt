@@ -1,12 +1,12 @@
 Nella lezione 2, vediamo come si rappresentano i dati normalmente in JavaScript.
 
-In questa lezione c'è un nuovo file che andremo ad utilizzare: "main.js".
+In questa lezione c'ï¿½ un nuovo file che andremo ad utilizzare: "main.js".
 
 Per utilizzarlo, copiarlo nella directory /js precedentemente creata, e aggiungere nel file "index.html" la riga:
 
 "<script src="js/main.js"></script>"
 
-In questa lezione non andremo a disctere di backbone, ma di come rappresentare i dati in JS.
+In questa lezione non andremo ancora a discutere di backbone, ma di come rappresentare i dati in JS.
 
 
 var Persona = function(data){
@@ -38,7 +38,7 @@ Persona {nome: "Mattia", eta: 26, occupazione: "Software Developer", lavoro: fun
 26
 
 > persona.get('eta')
-TypeError: Object [object Object] has no method 'get' //come vedremo ci sarà possibile con l'utilizzo di backbone
+TypeError: Object [object Object] has no method 'get' //come vedremo ci sarï¿½ possibile con l'utilizzo di backbone
 
 > persona.occupazione
 "Software Developer"
