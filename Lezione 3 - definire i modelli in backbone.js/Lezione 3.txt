@@ -1,0 +1,47 @@
+Nella lezione 3, vediamo come utilizzare i modelli in backbone.js
+
+
+------------------------------------------
+
+var Person = Backbone.Model.extend({
+    defaults: {
+        nome: 'Luca',
+        eta: 23,
+        occupazione: 'Developer'
+    },
+
+	work: function(){
+        return this.get('nome') + ' sta lavorando';
+    }
+
+});
+	
+var persona = new Person({nome: "Mattia", eta: 26, occupazione: "Software Developer"})
+
+------------------------------------------
+
+
+Definiamo un modello, estendendo la variabile globale di backbone "Model":
+
+In chrome, e nella console possiamo provare a digitare:
+
+> persona.get('nome')
+"Mattia"
+
+> persona.get('occupazione')
+"Software Developer"
+
+> persona.get('eta')
+26
+
+> persona.eta
+undefined //questo metodo non si può piu utilzzare
+
+> persona.set('nome','giulio') //possiamo settare un nuovo valore al nome
+child {cid: "c1", changed: Object, attributes: Object, _changes: Array[0], _hasComputed: true…}
+
+> persona.get('nome') //vedremo il nuovo valore
+"giulio"
+
+> persona.toJSON()
+Object {nome: "giulio", eta: 26, occupazione: "Software Developer"}
