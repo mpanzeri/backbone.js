@@ -1,0 +1,44 @@
+Nella lezione 4, vediamo come introdurre la validazione nei modelli in backbone.js.
+
+Nel main.js, è stato aggiunto:
+
+------------------------------------------
+
+validate: function(data){
+        if (data.eta <  0){
+            return 'L\'eta\' deve avere valori positivi';
+        }
+
+        if (!data.nome){
+            return 'Devi definire un nome';
+        }
+    },
+
+
+------------------------------------------
+
+Questa porzione di codice, aggiunta al 'Model' di 'persona', permette la validazione dei dati.
+
+creiamo un oggetto persona:
+var persona = new Person({nome: "Mattia", eta: 2, occupazione: "Software Developer"})
+
+Per vedere i messaggi di errore, bisogna 'bindare' un 'listen event' alla persona.
+
+persona.on('error', function(model,error){
+	console.log(error);
+});
+
+
+
+In chrome, e nella console possiamo provare a digitare:
+
+> persona.get('eta')
+2
+
+> persona.set('eta','-1')
+L'eta' deve avere valori positivi main.js:25
+false
+
+> persona.set('nome',null)
+Devi definire un nome main.js:25
+false
