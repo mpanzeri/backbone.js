@@ -1,12 +1,10 @@
-Nella lezione 2, vediamo come si rappresentano i dati normalmente in JavaScript.
+In this topic we will be learning how to represent data in JavaScript.
 
-In questa lezione c'e' un nuovo file che andremo ad utilizzare: "main.js".
+For this lesson, there is a new file: "main.js".
 
-Per utilizzarlo, copiarlo nella directory /js precedentemente creata, e aggiungere nel file "index.html" la riga:
+You have to copy this file in /js directory and add in the "index.html" file:
 
 "<script src="js/main.js"></script>"
-
-In questa lezione non andremo ancora a discutere di backbone, ma di come rappresentare i dati in JS.
 
 
 var Persona = function(data){
@@ -19,17 +17,18 @@ Persona.prototype.lavoro = function(){
 };
 
 
-Definiamo un oggetto Persona con 3 attributi:
+Let's define a new person object with 3 attributes:
+
 1) nome, 
 2) eta', 
 3) occupazione
 
-Creiamo una nuova persona:
+Let's create a new person:
 
 var persona = new Persona({nome: "Mattia", eta: 26, occupazione: "Software Developer"})
 
 
-In chrome, e nella console possiamo provare a digitare:
+Open javascript console in chrome, and you can type:
 
 > persona
 Persona {nome: "Mattia", eta: 26, occupazione: "Software Developer", lavoro: function}
@@ -45,5 +44,3 @@ TypeError: Object [object Object] has no method 'get' //come vedremo ci sara' po
 
 >persona.lavoro()
 "Mattia sta lavorando, la sua occupazione: Software Developer"
-
-

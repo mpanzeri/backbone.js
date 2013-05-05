@@ -1,0 +1,33 @@
+What is backbone js:
+-------------------
+
+Backbone.js is a framework that allows you to structure your Javascript code in a MVC (Model, View, Controller) 
+
+Dependencies that you need to use:
+-------------------------------
+
+1) Jquery
+2) Backbone
+3) Underscore
+
+Installation / configuration:
+----------------------------
+
+As you can see in the "index.html", you have to import these 3 js files. (underscore.js, jquery,js, backbone.js)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+        <body>
+            <script src="js/underscore.js"></script>
+            <script src="js/jquery.js"> </script>
+            <script src="js/backbone.js"></script>
+        </body>
+</html>
+
+If installation is proper...
+----------------------------
+
+Open your index.html file in chrome and open chrome developer tools and open console tab, if you type "Backbone" you should have access for global BackBone variables

@@ -1,6 +1,6 @@
-Nella lezione 4, vediamo come introdurre la validazione nei modelli in backbone.js.
+In the 4th lesson, let's talk about introducing backbone.js models validation.
 
-Nel main.js, è stato aggiunto:
+In the main.js file, add this portion of code:
 
 ------------------------------------------
 
@@ -17,12 +17,12 @@ validate: function(data){
 
 ------------------------------------------
 
-Questa porzione di codice, aggiunta al 'Model' di 'persona', permette la validazione dei dati.
+This portion of code, added to the person "Model", allows data validation.
 
-creiamo un oggetto persona:
+Let's create a new person object:
 var persona = new Person({nome: "Mattia", eta: 2, occupazione: "Software Developer"})
 
-Per vedere i messaggi di errore, bisogna 'bindare' un 'listen event' alla persona.
+To see the errors messages, you have to bind a listen event to the person.
 
 persona.on('error', function(model,error){
 	console.log(error);
@@ -30,7 +30,7 @@ persona.on('error', function(model,error){
 
 
 
-In chrome, e nella console possiamo provare a digitare:
+Open chrom, open javascript console and type:
 
 > persona.get('eta')
 2

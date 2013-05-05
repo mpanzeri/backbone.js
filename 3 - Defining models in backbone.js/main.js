@@ -9,5 +9,6 @@ var Person = Backbone.Model.extend({
     }
 
 });
-	
-var persona = new Person({nome: "Mattia", eta: 26, occupazione: "Software Developer"})
+
+//Creiamo un oggetto persona	
+var persona = new Person({nome: "Mattia", eta: 2, occupazione: "Software Developer"})

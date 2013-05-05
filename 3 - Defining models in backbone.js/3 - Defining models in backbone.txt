@@ -1,5 +1,6 @@
-Nella lezione 3, vediamo come utilizzare i modelli in backbone.js
+In this lesson we will discuss about to define backbone.js models
 
+Let's define a new Model, with the global backbone variable "Model"
 
 ------------------------------------------
 
@@ -20,10 +21,7 @@ var persona = new Person({nome: "Mattia", eta: 26, occupazione: "Software Develo
 
 ------------------------------------------
 
-
-Definiamo un modello, estendendo la variabile globale di backbone "Model":
-
-In chrome, e nella console possiamo provare a digitare:
+Open javascript console and type:
 
 > persona.get('nome')
 "Mattia"
@@ -35,12 +33,12 @@ In chrome, e nella console possiamo provare a digitare:
 26
 
 > persona.eta
-undefined //questo metodo non si può piu utilzzare
+undefined //You cant do this
 
-> persona.set('nome','giulio') //possiamo settare un nuovo valore al nome
+> persona.set('nome','giulio') //You can set the new value
 child {cid: "c1", changed: Object, attributes: Object, _changes: Array[0], _hasComputed: true…}
 
-> persona.get('nome') //vedremo il nuovo valore
+> persona.get('nome') //You can see the new value
 "giulio"
 
 > persona.toJSON()
