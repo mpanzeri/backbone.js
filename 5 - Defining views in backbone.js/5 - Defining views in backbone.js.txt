@@ -1,7 +1,7 @@
 In this lesson, we will talk about views in backbone.js.
 Views is how to display your data.
 
-So now we want to add a view for a person. For simplicity lets take about list items. So every person will be displayed in a �li� tag.
+So now we want to add a view for a person. For simplicity lets take about list items. So every person will be displayed in a <li> tag.
 
 main.js:
 
