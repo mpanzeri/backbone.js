@@ -1,0 +1,91 @@
+In this lesson, we will talk about views in backbones.
+Views is how to display your data.
+
+So now we want to add a view for a person. For simplicity lets take about list items. So every person will be displayed in a “li” tag.
+
+main.js:
+
+var PersonView = Backbone.View.extend({
+    tagName: 'li'
+});
+
+
+
+type on the javascript console:
+
+> var personView = new PersonView();
+  personView.el //will tell you the view for the object. Right now its a blank "li" tag.
+  personView.$el // is jquery tied up view for this object.
+
+[ <li>?</li>? ]
+
+
+
+
+You can also add other things like css class name, element id...
+
+main.js:
+
+var PersonView = Backbone.View.extend({
+    tagName: 'li',
+    className: 'developer',
+    id: 'personaMattia' 
+});
+
+let's go on the js console:
+
+> var personView = new PersonView();
+  personView.el 
+  personView.$el
+
+[ <li id=?"personaMattia" class=?"developer">?</li>? ]
+
+
+Backbone offers constructor for the views, it will be automatically called when you initiate a view.
+
+initialize: function(){}
+
+Backbone also offers a method render that will render out the output for the data of the model associated with that view.
+
+render: function(){}
+
+add in msin.js:
+ 
+initialize: function(){
+   this.render();
+},
+
+render: function(){
+   this.$el.html(this.model.get('nome') + "-" + this.model.get('eta') + "-" + this.model.get('occupazione'));
+}
+
+
+let's go on the console:
+
+> var person = new Person;
+  var personView = new PersonView({ model: person });
+
+undefined
+
+> personView.el
+
+<li id=?"personaMattia" class=?"developer">?Luca-23-Developer?</li>?
+
+With the above code we did:
+
+1) create object person (backbone model)
+2) create new object personView (backbone View) passing the model person
+3) call initialize function, that calls the rendering function that adds the content in view
+
+and then... to add and visualize this content on the html page:
+
+type:
+
+> $(document.body).html(personView.el);
+
+- Luca-23-Developer
+
+
+
+
+
